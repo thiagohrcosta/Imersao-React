@@ -3,7 +3,8 @@ import React from 'react';
 function App() {
   return (
     <div>
-      HELLO WORLD
+      <h1>Hello World</h1>
+      Imersão Alura
     </div>
   );
 }
