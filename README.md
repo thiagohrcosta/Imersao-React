@@ -11,7 +11,7 @@ Projeto **MOVIETRAILER** desenvolvido durante a *Semana Alura React* com o objet
 - CSS
 
 ## Versão mobile
-|  ![enter image description here](https://github.com/thiagohrcosta/Imersao-React/blob/master/arquivos/movietrailer1.png?raw=true)| ![enter image description here](https://github.com/thiagohrcosta/Imersao-React/blob/master/arquivos/movietrailer2.png?raw=true) 
+![enter image description here](https://github.com/thiagohrcosta/Imersao-React/blob/master/arquivos/movietrailer1.png?raw=true)  ![enter image description here](https://github.com/thiagohrcosta/Imersao-React/blob/master/arquivos/movietrailer2.png?raw=true) 
 
 ## Etapa de produção
 **28 julho de 2020**
