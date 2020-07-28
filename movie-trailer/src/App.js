@@ -5,8 +5,6 @@ function App() {
   return (
     <div>
       <Menu />
-      <h1>Hello World</h1>
-      Imersão Alura
     </div>
   );
 }
