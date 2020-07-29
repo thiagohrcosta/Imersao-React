@@ -11,7 +11,7 @@ function Footer() {
         Criado por Thiago H. R. Costa durante a
         {' '}
         <a href="https://www.alura.com.br/">
-          Imersão React da Alura </a> . Visite meu <a href="https://github.com/thiagohrcosta/snakeGame"><i class="fab fa-github"></i></a>
+          Imersão React da Alura </a> . Visite meu <a href="https://github.com/thiagohrcosta"><i class="fab fa-github"></i></a>
       </p>
     </FooterBase>
   );
