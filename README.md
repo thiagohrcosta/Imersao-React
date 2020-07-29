@@ -21,5 +21,8 @@ Projeto **MOVIETRAILER** desenvolvido durante a *Semana Alura React* com o objet
 - Criando página principal e estilizando com CSS;
 - Deploy da primeira versão da aplicação.
 
+**29 julho de 2020 - Roteamento e state**
+
+
 ## Confira o projeto em execução
 Acesse o Projeto direto em seu navegador clicando [AQUI](https://imersao-react-snowy.vercel.app/).
