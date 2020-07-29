@@ -10,7 +10,7 @@ function Menu(){
       <img className="Logo" src={Logo} alt="MovieTrailer"/>
     </a>
 
-    <Button as="a" className="ButtonLink" href="/">
+    <Button as="a" className="ButtonLink" href="/cadastro/video">
       Cadastrar
     </Button>
   </nav>
