@@ -16,8 +16,10 @@ function CadastroCategoria(){
         Nome da Categoria:
         <input type="text"
         value={nomeDaCategoria}
-        onChange={function funcaoHandler(){
+        onChange={function funcaoHandler(infoDoEvento){
           console.log(nomeDaCategoria);
+          console.log('[infoDoEvento.target.value]',infoDoEvento.target.value);
+          setNomeDaCategoria(infoDoEvento.target.value);
         }} />
       </label>
     </form>
