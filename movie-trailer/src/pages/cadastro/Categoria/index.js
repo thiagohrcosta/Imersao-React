@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PageDefault from '../../../components/PageDefault';
 import {Link} from 'react-router-dom';
 
 function CadastroCategoria(){
 
-  useState('Filmes');
+  const [nomeDaCategoria, setNomeDaCategoria] = useState('Valor Inicial');
 
   return (
     <PageDefault>
@@ -14,7 +14,11 @@ function CadastroCategoria(){
       {/* State */}
       <label htmlFor="">
         Nome da Categoria:
-        <input type="text" />
+        <input type="text"
+        value={nomeDaCategoria}
+        onChange={function funcaoHandler(){
+          console.log(nomeDaCategoria);
+        }} />
       </label>
     </form>
       <Link to="/">
