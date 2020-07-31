@@ -11,30 +11,72 @@ function CadastroCategoria(){
     <PageDefault>
     <h1>Cadastro de Categoria: {nomeDaCategoria}</h1>
 
-    <form onSubmit={function handleSubmit(infoDoEvento){
+    <form style={{background: nomeDaCategoria }} onSubmit={function handleSubmit(infoDoEvento){
       infoDoEvento.preventDefault();
       setCategorias([
         ...categorias,
         nomeDaCategoria
       ]);
     }}>
-      <label htmlFor="">
-        Nome da Categoria:
-        <input type="text"
-        value={nomeDaCategoria}
-        onChange={function funcaoHandler(infoDoEvento){
-          setNomeDaCategoria(infoDoEvento.target.value);
-        }} />
-      </label>
+
+      <div>
+        <div>
+          <label>
+            Nome da Categoria:
+            <input type="text"
+            value={nomeDaCategoria}
+            onChange={function funcaoHandler(infoDoEvento){
+              setNomeDaCategoria(infoDoEvento.target.value);
+            }} />
+          </label>
+        </div>
+
+        <div>
+          <label>
+            Descrição:
+            <textarea
+            value={nomeDaCategoria}
+            onChange={function funcaoHandler(infoDoEvento){
+              setNomeDaCategoria(infoDoEvento.target.value);
+            }} />
+          </label>
+        </div>
+
+        <div>
+          <label>
+            Descrição:
+            <textarea
+            value={nomeDaCategoria}
+            onChange={function funcaoHandler(infoDoEvento){
+              setNomeDaCategoria(infoDoEvento.target.value);
+            }} />
+          </label>
+        </div>
+
+        <div>
+          <label>
+            Cor:
+            <input
+            type="color"
+            value={nomeDaCategoria}
+            onChange={function funcaoHandler(infoDoEvento){
+              setNomeDaCategoria(infoDoEvento.target.value);
+            }} />
+          </label>
+        </div>
+
+      </div>
+
+
       <button>
         Cadastrar
       </button>
     </form>
 
     <ul>
-      {categorias.map((categoria) => {
+      {categorias.map((categoria, indice) => {
         return ( 
-        <li key={categoria}>{categoria}</li>
+        <li key={`${categoria}${indice}`}>{categoria}</li>
         );
       })}
     </ul>
