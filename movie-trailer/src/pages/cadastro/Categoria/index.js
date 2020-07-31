@@ -4,25 +4,38 @@ import {Link} from 'react-router-dom';
 
 function CadastroCategoria(){
 
+  const [categorias, setCategorias] = useState(['Teste']); 
   const [nomeDaCategoria, setNomeDaCategoria] = useState('Valor Inicial');
 
   return (
     <PageDefault>
     <h1>Cadastro de Categoria: {nomeDaCategoria}</h1>
 
-    <form action="">
-      {/* State */}
+    <form onSubmit={function handleSubmit(infoDoEvento){
+      infoDoEvento.preventDefault();
+      console.log('Você tentou enviar o FORM')
+    }}>
       <label htmlFor="">
         Nome da Categoria:
         <input type="text"
         value={nomeDaCategoria}
         onChange={function funcaoHandler(infoDoEvento){
-          console.log(nomeDaCategoria);
-          console.log('[infoDoEvento.target.value]',infoDoEvento.target.value);
           setNomeDaCategoria(infoDoEvento.target.value);
         }} />
       </label>
+      <button>
+        Cadastrar
+      </button>
     </form>
+
+    <ul>
+      {categorias.map((categoria) => {
+        return ( 
+        <li key={categoria}>{categoria}</li>
+        );
+      })}
+    </ul>
+
       <Link to="/">
         Ir para home
       </Link>
