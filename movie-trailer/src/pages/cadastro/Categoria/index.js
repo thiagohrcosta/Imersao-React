@@ -13,7 +13,10 @@ function CadastroCategoria(){
 
     <form onSubmit={function handleSubmit(infoDoEvento){
       infoDoEvento.preventDefault();
-      console.log('Você tentou enviar o FORM')
+      setCategorias([
+        ...categorias,
+        nomeDaCategoria
+      ]);
     }}>
       <label htmlFor="">
         Nome da Categoria:
