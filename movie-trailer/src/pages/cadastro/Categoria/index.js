@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import {Link} from 'react-router-dom';
 import FormField from '../../../components/FormField';
@@ -29,6 +29,42 @@ function CadastroCategoria(){
       infoDoEvento.target.value
     );
   }
+
+  useEffect(() =>{
+    if(window.location.href.includes('localhost')) {
+      const URL = 'http://localhost:8080/categorias'; 
+      fetch(URL)
+       .then(async (respostaDoServer) =>{
+        if(respostaDoServer.ok) {
+          const resposta = await respostaDoServer.json();
+          setCategorias(resposta);
+          return; 
+        }
+        throw new Error('Não foi possível pegar os dados');
+       })
+    }    
+  }, []);
+
+    /*
+    setTimeout(() => {
+      setCategorias([
+        ...categorias,
+        {
+          "id": 1,
+          "nome": "Ação e Aventura",
+          "descricao": "A verdadeira ação e aventura do século XIX",
+          "cor": "#6bd1ff"
+        },
+        {
+          "id": 2,
+          "nome": "Super-Heróis",
+          "descricao": "Os melhores filmes de super-heróis",
+          "cor": "#6bd1ff"
+        },
+      ], 4 * 1000);
+    })
+  }, []);
+  */
 
   return (
     <PageDefault>
@@ -68,16 +104,24 @@ function CadastroCategoria(){
             onChange={handleChange}
             />
 
+
       <Button>
         Cadastrar
       </Button>
     </form>
 
+    {categorias.length === 0 && (
+      <div>
+        Loading...
+      </div>
+    )}
+
     <ul>
       {categorias.map((categoria) => {
         return ( 
         <li key={`${categoria.nome}`}>
-          {categoria.nome}</li>
+          {categoria.nome}
+          </li>
         );
       })}
     </ul>

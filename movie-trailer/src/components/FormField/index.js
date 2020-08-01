@@ -114,8 +114,8 @@ FormField.defaultProps = {
 
 FormField.prototype = {
   label: PropTypes.string.isRequired,
-  type: PropTypes.string,
   name: PropTypes.string.isRequired, 
+  type: PropTypes.string,
   value: PropTypes.string, 
   onChange: PropTypes.func,
 };
