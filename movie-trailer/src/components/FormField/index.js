@@ -16,7 +16,7 @@ const FormFieldWraper = styled.div`
 const Label = styled.label`
 `;
 
-Label.text = styled.span`
+Label.Text = styled.span`
   color: #E5E5E5;
   height: 57px;
   position: absolute; 
@@ -71,26 +71,36 @@ const Input = styled.input`
 }
 `;
 
-function FormField( { label, type, name, value, onChange }) {
+function FormField( { 
+  label, 
+  type, 
+  name, 
+  value, 
+  onChange 
+}) {
   
   const fieldId = `id_${name}`;
   const isTypeTextarea = type === 'textarea';
   const tag = isTypeTextarea ? 'textarea' : 'input';
   
+  const hasValue = Boolean(value.length);
+
   return (
     <FormFieldWraper>
       <Label htmlFor={fieldId}>
-        <Label.text>
-          {label} :
-        </Label.text>
+      
         <Input
           as={tag}
           id={fieldId}
           type={type}
           value={value}
           name={name}
+          hasValue={hasValue}
           onChange={onChange}
         />
+          <Label.Text>
+          {label} :
+        </Label.Text>
       </Label>
     </FormFieldWraper>
   );
