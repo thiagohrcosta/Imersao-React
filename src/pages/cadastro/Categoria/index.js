@@ -30,41 +30,20 @@ function CadastroCategoria(){
     );
   }
 
-  useEffect(() =>{
-    if(window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias'; 
+  useEffect(() => {
+    if (window.location.href.includes('localhost')) {
+      const URL = 'http://localhost:8080/categorias';
       fetch(URL)
-       .then(async (respostaDoServer) =>{
-        if(respostaDoServer.ok) {
-          const resposta = await respostaDoServer.json();
-          setCategorias(resposta);
-          return; 
-        }
-        throw new Error('Não foi possível pegar os dados');
-       })
-    }    
+        .then(async (respostaDoServer) => {
+          if (respostaDoServer.ok) {
+            const resposta = await respostaDoServer.json();
+            setCategorias(resposta);
+            return;
+          }
+          throw new Error('Não foi possível pegar os dados');
+        });
+    }
   }, []);
-
-    /*
-    setTimeout(() => {
-      setCategorias([
-        ...categorias,
-        {
-          "id": 1,
-          "nome": "Ação e Aventura",
-          "descricao": "A verdadeira ação e aventura do século XIX",
-          "cor": "#6bd1ff"
-        },
-        {
-          "id": 2,
-          "nome": "Super-Heróis",
-          "descricao": "Os melhores filmes de super-heróis",
-          "cor": "#6bd1ff"
-        },
-      ], 4 * 1000);
-    })
-  }, []);
-  */
 
   return (
     <PageDefault>
