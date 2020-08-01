@@ -1,0 +1,9 @@
+{
+  "categorias": [{
+    "id":1,
+    "nome": "Ação e Aventura",
+    "descricao": "A verdadeira ação e aventura do século XIX",
+    "cor": "#6bd1ff"
+    }
+  ]
+}
