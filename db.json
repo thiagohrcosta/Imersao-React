@@ -1,15 +1,141 @@
 {
-  "categorias": [{
-    "id":1,
-    "nome": "Ação e Aventura",
-    "descricao": "A verdadeira ação e aventura do século XIX",
-    "cor": "#6bd1ff"
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Ação e Aventura",
+      "link": "/",
+      "cor": "#6BD1FF",
+      "videos": [
+        {
+          "titulo": "First Blood",
+          "anoLancamento": 1982,
+          "nota": 7.7,
+          "atorPrincipal": "Sylvester Stallone",
+          "url": "https://www.youtube.com/watch?v=IAqLKlxY3Eo&t=26s"
+
+        },
+        {
+          "titulo": "Die Hard",
+          "anoLancamento": 1988,
+          "nota": 8.2,
+          "atorPrincipal": "Bruce Willis",
+          "url": "https://www.youtube.com/watch?v=jaJuwKCmJbY&t=14s"
+        },
+        {
+          "titulo": "The Terminator",
+          "anoLancamento": 1984,
+          "nota": 8.0,
+          "atorPrincipal": "Arnold Schwarzenegger",
+          "url": "https://www.youtube.com/watch?v=k64P4l2Wmeg"
+        },
+        {
+          "titulo": "Rocky",
+          "anoLancamento": 1976,
+          "nota": 8.1,
+          "atorPrincipal": "Sylvester Stallone",
+          "url": "https://www.youtube.com/watch?v=7RYpJAUMo2M"
+        },
+        {
+          "titulo": "Raiders of the Lost Ark",
+          "anoLancamento": 1981,
+          "nota": 8.4,
+          "atorPrincipal": "Harrison Ford",
+          "url": "https://www.youtube.com/watch?v=XkkzKHCx154"
+        },
+        {
+          "titulo": "Letal Weapon",
+          "anoLancamento": 1987,
+          "nota": 7.6,
+          "atorPrincipal": "Mel Gibson",
+          "url": "https://www.youtube.com/watch?v=bKeW-MGu-qQ&t=2s"
+        },
+        {
+          "titulo": "Fist of Fury",
+          "anoLancamento": 1972,
+          "nota": 7.4,
+          "atorPrincipal": "Bruce Lee",
+          "url": "https://www.youtube.com/watch?v=w_4RjSbSIFY"
+        },
+        {
+          "titulo": "Above the Law",
+          "anoLancamento": 1988,
+          "nota": 6.0,
+          "atorPrincipal": "Steven Seagal",
+          "url": "https://www.youtube.com/watch?v=BsbYE-Q474I"
+        }        
+      ]
     },
     {
-    "id":2,
-    "nome": "Super-Heróis",
-    "descricao": "Os melhores filmes de super-heróis",
-    "cor": "#6bd1ff"
-    }
+      "id": 2,
+      "titulo": "Super-Heróis",
+      "link": "/",
+      "cor": "#00C86F",
+      "videos": [
+        {
+          "titulo": "Superman",
+          "anoLancamento": 1978,
+          "nota": 7.3,
+          "atorPrincipal": "Christopher Reeve",
+          "url": "https://www.youtube.com/watch?v=MNwUEw0HEY0"
+        },
+        {
+
+          "titulo": "Batman",
+          "anoLancamento": 1989,
+          "nota": 7.5,
+          "atorPrincipal": "Michael Keaton",
+          "url": "https://www.youtube.com/watch?v=VRqa47-jv0M"
+        },
+        {
+          "titulo": "Superman 2",
+          "anoLancamento": 1980,
+          "nota": 6.8,
+          "atorPrincipal": "Christopher Reeve",
+          "url": "https://www.youtube.com/watch?v=pduQsxB9QX0"
+        },
+        {
+          "titulo": "Batman Returns",
+          "anoLancamento": 1992,
+          "nota": 7.0,
+          "atorPrincipal": "Michael Keaton",
+          "url": "https://www.youtube.com/watch?v=Too3qgNaYBE"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Comédia",
+      "link": "/",
+      "cor": "#01caca",
+      "videos": [
+        {
+          "titulo": "Police Academy",
+          "anoLancamento": 1984,
+          "nota": 6.7,
+          "atorPrincipal": "Steve Guttenberg",
+          "url": "https://www.youtube.com/watch?v=k4aedBBko4M"
+        },
+        {
+          "titulo": "Bean",
+          "anoLancamento": 1997,
+          "nota": 6.5,
+          "atorPrincipal": "Rowan Atkinson",
+          "url": "https://www.youtube.com/watch?v=nL94tb3hS1I&t=4s"
+        },
+        {
+          "titulo": "Junior",
+          "anoLancamento": 1994,
+          "nota": 4.6,
+          "atorPrincipal": "Arnold Schwarzenegger",
+          "url": "https://www.youtube.com/watch?v=nOaA21MMuNY"
+        },
+        {
+          "titulo": "Look Whoś Talking Now",
+          "anoLancamento": 1993,
+          "nota": 4.4,
+          "atorPrincipal": "John Travolta",
+          "url": "https://www.youtube.com/watch?v=nOaA21MMuNY"
+        }
+
   ]
 }

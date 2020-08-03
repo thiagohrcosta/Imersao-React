@@ -1,13 +1,10 @@
 {
   "categorias": [
     {
+      "id": 1,
       "titulo": "Ação e Aventura",
       "link": "/",
       "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Sua coleção de filmes de ação e aventura",
-        "url": "/"
-      },
       "videos": [
         {
           "titulo": "First Blood",
@@ -69,12 +66,10 @@
       ]
     },
     {
+      "id": 2,
       "titulo": "Super-Heróis",
+      "link": "/",
       "cor": "#00C86F",
-      "link_extra": {
-        "text": "",
-        "url": "/"
-      },
       "videos": [
         {
           "titulo": "Superman",
